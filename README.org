@@ -1,0 +1,11 @@
+* ~dfmt.el~
+** Quickstart
+   #+BEGIN_SRC emacs-lisp
+(use-package dfmt
+  :load-path "/path/to/your/dfmt.el"
+  :after d-mode
+  :config
+  (add-hook 'after-save-hook #'dfmt-after-save))
+   #+END_SRC
+** License
+   GNU General Public License Version 3
